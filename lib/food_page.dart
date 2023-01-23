@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/counter_page.dart';
 import 'package:my_first_app/models/category.dart';
 import 'package:my_first_app/models/food.dart';
 import './fake_data.dart';
@@ -30,7 +31,7 @@ class FoodPage extends StatelessWidget {
               Food food = foods[index];
               return InkWell(
                   onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => FoodPageDetail(
+                      builder: (context) => CounterPage(
                             food,
                           ))),
                   child: Stack(

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_app/categories_page.dart';
 import 'package:my_first_app/food_page.dart';
+import 'package:bloc/bloc.dart';
+import 'package:my_first_app/counter_observer.dart';
 
 void main() {
+  Bloc.observer = CounterObserver();
   return runApp(const MyApp());
 }
 

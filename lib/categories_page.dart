@@ -3,6 +3,7 @@ import 'package:my_first_app/category_item.dart';
 import 'package:my_first_app/fake_data.dart';
 
 class CategoriesPage extends StatelessWidget {
+  static const String routeName = 'CategoriesPage';
   @override
   Widget build(BuildContext context) {
     return Container(
